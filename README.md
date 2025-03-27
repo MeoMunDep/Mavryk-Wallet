@@ -48,7 +48,7 @@ Before running the bot, make sure you have installed:
    ```
 2. **Install required libraries**:
    ```bash
-   npm install --force user-agents axios colors https-proxy-agent socks-proxy-agent 
+   npm install fs colors axios bs58check blakejs child_process @stablelib/ed25519 https-proxy-agent socks-proxy-agent --no-fund --no-audit --legacy-peer-deps --force
    ```
 3. **Prepare configuration files** ([See details](#bot-configuration))
 
