@@ -185,7 +185,7 @@ docker run -d --name mavryk-wallet-container -v %cd%\logs:/app/logs mavryk-walle
 
 ## 📌 Contact & Support
 
-- **Mavryk Website** [Wallet Extension Link](https://chromewebstore.google.com/detail/mavryk-wallet/cgddkajmbckbjbnondgfcbcojjjdnmji) | [Galxe quests](https://app.galxe.com/quest/YxQGYqYQcCGDcfX7KZMU8j/GCC9vt1ZLg)
+- **Mavryk Website** [Wallet Extension Link](https://chromewebstore.google.com/detail/mavryk-wallet/cgddkajmbckbjbnondgfcbcojjjdnmji) | [Galxe quests](https://app.galxe.com/quest/YxQGYqYQcCGDcfX7KZMU8j/GCC9vt1ZLg) | [Faucet Trick](https://t.me/KeoAirDropFreeNee/1651)
 - **Buy a Telegram account** [Here](https://t.me/KeoAirDropFreeNe/312/27801)
 - **Contact for work:** [Telegram](https://t.me/MeoMunDep)
 - **Join the support group:** [Join here](https://t.me/KeoAirDropFreeNe)
