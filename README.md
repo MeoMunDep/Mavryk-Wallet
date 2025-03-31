@@ -78,8 +78,17 @@ Before running the bot, make sure you have installed:
   "walletDelays": [1, 1],
   "restartInterval": 300,
   "maxConcurrentWallets": 10,
-  "amountToSendMVRK": 10,
-  "receiverAddresses": [""]
+
+  "staking": false,
+  "createToken": true,
+
+  "sendToken": {
+    "USDT": true,
+    "mMVRK": true,
+    "MVN": true,
+    "amount": [1, 2]
+}
+
 }
 
 ```
