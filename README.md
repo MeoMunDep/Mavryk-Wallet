@@ -90,7 +90,7 @@ Before running the bot, make sure you have installed:
 }
 
   "sendToInternalAddresses": true,
-  "receiverAddresses": [ ]
+  "receiverAddresses": ["mv1LkTHEzHJ3pRw159Qv6Q2We4EyTH6RgS2X"]
 
 }
 
