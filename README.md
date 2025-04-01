@@ -102,15 +102,15 @@ Dưới đây là bảng đầy đủ với hướng dẫn chi tiết cho các t
 
 | **Parameter Name**            | **Data Type**      | **Default Value** | **Description**                                                                   |
 | ----------------------------- | ------------------ | ----------------- | --------------------------------------------------------------------------------- |
-| `walletDelays`            | `[number, number]` | `[5, 8]`          | Random delay (in seconds) between wallets when performing tasks. Tham số này sẽ áp dụng một khoảng thời gian ngẫu nhiên giữa mỗi ví khi bot thực hiện các tác vụ. |
+| `walletDelays`            | `[number, number]` | `[5, 8]`          | Random delay (in seconds) between wallets when performing tasks. |
 | `restartInterval`    | `number`           | `300`             | Time (in seconds) before the bot restarts all wallets. |
 | `maxConcurrentWallets` | `number`           | `100`             | Number of wallets running simultaneously.  |
 | `staking`                     | `boolean`          | `false`           | Determines whether staking is enabled.  |
 | `createToken`                  | `boolean`          | `true`            | Defines whether the bot should create tokens. |
 | `sendToken`                   | `object`           | N/A               | Contains settings for which tokens should be sent.  |
-| `sendToken.USDT`              | `boolean`          | `true`            | Whether to send USDT. Nếu là `true`, USDT sẽ được gửi. |
-| `sendToken.mMVRK`             | `boolean`          | `true`            | Whether to send mMVRK. Nếu là `true`, mMVRK sẽ được gửi. |
-| `sendToken.MVN`               | `boolean`          | `true`            | Whether to send MVN. Nếu là `true`, MVN sẽ được gửi. |
+| `sendToken.USDT`              | `boolean`          | `true`            | Whether to send USDT. |
+| `sendToken.mMVRK`             | `boolean`          | `true`            | Whether to send mMVRK.  |
+| `sendToken.MVN`               | `boolean`          | `true`            | Whether to send MVN.  |
 | `sendToken.amount`            | `[number, number]` | `[1, 2]`          | Range of the amount of tokens to send (in specified tokens).  |
 | `sendToInternalAddresses`     | `boolean`          | `true`            | Whether to send tokens to internal addresses.  |
 | `receiverAddresses`           | `array of string`  | N/A               | List of receiver addresses. |
