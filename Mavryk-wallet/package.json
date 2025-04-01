@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@stablelib/ed25519": "^2.0.2",
+    "axios": "^1.8.4",
+    "blakejs": "^1.2.1",
+    "bs58check": "^4.0.0",
+    "colors": "^1.4.0",
+    "https-proxy-agent": "^7.0.6",
+    "socks-proxy-agent": "^8.0.5"
+  }
+}
