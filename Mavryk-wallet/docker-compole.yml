@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  bot:
+    build: .
+    container_name: mavryk-wallet
+    restart: unless-stopped
+    volumes:
+      - ./configs.json:/app/configs.json
+      - ./privateKeys.txt:/app/wallets.txt
+      - ./proxies.txt:/app/proxies.txt
+    environment:
+      - NODE_ENV=production
+    stdin_open: true
+    tty: true
