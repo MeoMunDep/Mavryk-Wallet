@@ -98,15 +98,23 @@ Before running the bot, make sure you have installed:
 
 Explanation of each parameter:
 
+Dưới đây là bảng đầy đủ với hướng dẫn chi tiết cho các tham số trong file `config.json` mà bạn cung cấp:
+
 | **Parameter Name**            | **Data Type**      | **Default Value** | **Description**                                                                   |
 | ----------------------------- | ------------------ | ----------------- | --------------------------------------------------------------------------------- |
-| `walletDelays`            | `[number, number]` | `[5, 8]`          | Random delay (in seconds) between wallets when performing tasks.                 |
-| `restartInterval`    | `number`           | `300`             | Time (in seconds) before the bot restarts all wallets.                           |
-| `maxConcurrentWallets` | `number`           | `100`             | Number of wallets running simultaneously.                                        |
-| `amountToSendMVRK`                     | `number`          | `10`            | Amount of MVRK to receive.        |
-| `receiverAddresses`                   | `string`          | `true`            | Addresses list to receive tokens.                                            |
+| `walletDelays`            | `[number, number]` | `[5, 8]`          | Random delay (in seconds) between wallets when performing tasks. Tham số này sẽ áp dụng một khoảng thời gian ngẫu nhiên giữa mỗi ví khi bot thực hiện các tác vụ. |
+| `restartInterval`    | `number`           | `300`             | Time (in seconds) before the bot restarts all wallets. |
+| `maxConcurrentWallets` | `number`           | `100`             | Number of wallets running simultaneously.  |
+| `staking`                     | `boolean`          | `false`           | Determines whether staking is enabled.  |
+| `createToken`                  | `boolean`          | `true`            | Defines whether the bot should create tokens. |
+| `sendToken`                   | `object`           | N/A               | Contains settings for which tokens should be sent.  |
+| `sendToken.USDT`              | `boolean`          | `true`            | Whether to send USDT. Nếu là `true`, USDT sẽ được gửi. |
+| `sendToken.mMVRK`             | `boolean`          | `true`            | Whether to send mMVRK. Nếu là `true`, mMVRK sẽ được gửi. |
+| `sendToken.MVN`               | `boolean`          | `true`            | Whether to send MVN. Nếu là `true`, MVN sẽ được gửi. |
+| `sendToken.amount`            | `[number, number]` | `[1, 2]`          | Range of the amount of tokens to send (in specified tokens).  |
+| `sendToInternalAddresses`     | `boolean`          | `true`            | Whether to send tokens to internal addresses.  |
+| `receiverAddresses`           | `array of string`  | N/A               | List of receiver addresses. |
 
-Would you like me to add instructions on how users can adjust `configs.json` based on their needs? 🚀
 
 ### 2. `privateKeys.txt` - 🗂️ Wallet Privatekey
 
