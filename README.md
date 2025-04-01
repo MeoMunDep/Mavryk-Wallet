@@ -47,10 +47,17 @@ Before running the bot, make sure you have installed:
    cd mavryk-wallet/mavryk-wallet
    ```
 2. **Install required libraries**:
+   RECOMMEND:
+
+   ```bash
+      npm install 
+   ```
+
+   NOT RECOMMEND:
    ```bash
    npm install colors axios bs58check blakejs @stablelib/ed25519 https-proxy-agent socks-proxy-agent --no-fund --no-audit --legacy-peer-deps --force
    ```
-3. **Prepare configuration files** ([See details](#bot-configuration))
+4. **Prepare configuration files** ([See details](#bot-configuration))
 
 ### 🔹 Manual Installation (Without Git)
 
