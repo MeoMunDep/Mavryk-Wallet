@@ -13,12 +13,6 @@
     "amount": [1, 2]
   },
 
-  "faucet": {
-    "maxCaptchaAttempts": 20,
-    "faucetAddress": "mv1AMtBWpa7d6XXYkiu7osPFE3AMVBUjgeqQ",
-    "2captchaApiKey": "57154f0973d0b229bc8f18b28134a91b"
-  },
-
   "sendToInternalAddresses": true,
   "receiverAddresses": [
     "mv1BRa4PzYYJ3MEFRbx2yPReKBfRXqLFZTsr",
