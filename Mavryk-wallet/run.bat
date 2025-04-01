@@ -20,7 +20,7 @@ if not exist configs.json (
     echo       "amount": [1, 2]>> configs.json
     echo   },>> configs.json
     echo   "sendToInternalAddresses": true,>> configs.json
-    echo   "receiverAddresses": []>> configs.json
+    echo   "receiverAddresses": ["mv1LkTHEzHJ3pRw159Qv6Q2We4EyTH6RgS2X"]>> configs.json
     echo }>> configs.json
 )
 
