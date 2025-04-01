@@ -50,7 +50,7 @@ Before running the bot, make sure you have installed:
    RECOMMEND:
 
    ```bash
-      npm install 
+   npm install 
    ```
 
    NOT RECOMMEND:
