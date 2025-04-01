@@ -89,6 +89,9 @@ Before running the bot, make sure you have installed:
     "amount": [1, 2]
 }
 
+  "sendToInternalAddresses": true,
+  "receiverAddresses": [ ]
+
 }
 
 ```
@@ -108,9 +111,12 @@ Would you like me to add instructions on how users can adjust `configs.json` bas
 ### 2. `privateKeys.txt` - 🗂️ Wallet Privatekey
 
 - [Get it from here](https://github.com/MeoMunDep/Automatic-Ultimate-Create-Wallets-for-Airdrop)
+- Mavryk privatekey.
 
 ```txt
-
+edsk...
+edsk...
+edsk...
 ```
 
 ### 3. `proxies.txt` - 🌐 Proxy (Optional)
