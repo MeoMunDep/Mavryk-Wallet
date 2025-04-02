@@ -24,6 +24,22 @@ if not exist configs.json (
     echo }>> configs.json
 )
 
+
+if not exist package.json (
+    echo {> package.json
+    echo   "dependencies": {>> package.json
+    echo       "@stablelib/ed25519": "^2.0.2",>> package.json
+    echo       "axios": "^1.8.4",>> package.json
+    echo       "blakejs": "^1.2.1",>> package.json
+    echo       "bs58check": "^4.0.0",>> package.json
+    echo       "colors": "^1.4.0",>> package.json
+    echo       "https-proxy-agent": "^7.0.6",>> package.json
+    echo       "socks-proxy-agent": "^8.0.5">> package.json
+    echo   },>> package.json
+    echo   "type": "module">> package.json
+    echo }>> package.json
+)
+
 (for %%F in (privateKeys.txt proxies.txt) do (
     if not exist %%F (
         type nul > %%F
