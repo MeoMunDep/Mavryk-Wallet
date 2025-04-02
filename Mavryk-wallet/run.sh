@@ -52,10 +52,28 @@ create_default_configs() {
 EOL
 }
 
+create_package_json() {
+    cat > package.json << EOL
+{
+  "dependencies": {
+    "@stablelib/ed25519": "^2.0.2",
+    "axios": "^1.8.4",
+    "blakejs": "^1.2.1",
+    "bs58check": "^4.0.0",
+    "colors": "^1.4.0",
+    "https-proxy-agent": "^7.0.6",
+    "socks-proxy-agent": "^8.0.5"
+  },
+  "type":"module"
+}
+EOL
+}
+
 check_configs() {
     if ! node -e "try { const cfg = require('./configs.json'); if (!cfg.maxConcurrentWallets || typeof cfg.maxConcurrentWallets !== 'number' || cfg.maxConcurrentWallets < 1) throw new Error(); } catch { process.exit(1); }"; then
         print_red "Invalid configuration detected. Resetting to default values..."
         create_default_configs
+        create_package_json
         print_green "Configuration reset completed."
     fi
 }
