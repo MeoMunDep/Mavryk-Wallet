@@ -7,5 +7,6 @@
     "colors": "^1.4.0",
     "https-proxy-agent": "^7.0.6",
     "socks-proxy-agent": "^8.0.5"
-  }
+  },
+  "type":"module"
 }
