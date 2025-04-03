@@ -70,9 +70,8 @@ Before running the bot, make sure you have installed:
 2. **Build and run the bot using Docker**:
    ```bash
    docker build -t mavryk-wallet-image .
-   docker run -d --name mavryk-wallet-container -v $(pwd)/logs:/app/logs mavryk-wallet-image
+   docker run -d --name mavryk-wallet-container mavryk-wallet-image
    ```
-   **For Windows CMD:** Use `%cd%` instead of `$(pwd)`.
 
 ---
 
