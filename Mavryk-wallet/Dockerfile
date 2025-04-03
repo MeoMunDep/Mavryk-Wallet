@@ -9,8 +9,6 @@ RUN npm install colors axios bs58check blakejs @stablelib/ed25519 https-proxy-ag
 
 COPY . .
 
-RUN mkdir -p logs
-
 RUN chmod +x run.sh
 
 EXPOSE 3000
