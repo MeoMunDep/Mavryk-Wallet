@@ -4,11 +4,10 @@ services:
   bot:
     build: .
     container_name: mavryk-wallet
+    stop_signal: SIGINT
     restart: unless-stopped
     volumes:
-      - ./configs.json:/app/configs.json
-      - ./privateKeys.txt:/app/wallets.txt
-      - ./proxies.txt:/app/proxies.txt
+      - .:/app
     environment:
       - NODE_ENV=production
     stdin_open: true
