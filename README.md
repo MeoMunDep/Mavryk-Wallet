@@ -201,13 +201,13 @@ npm install
 docker stop mavryk-wallet-container
 docker rm mavryk-wallet-container
 docker build -t mavryk-wallet-image .
-docker run -d --name mavryk-wallet-container -v $(pwd)/logs:/app/logs mavryk-wallet-image
+docker run -d --name mavryk-wallet-container mavryk-wallet-image
 ```
 
 _For Windows CMD:_
 
 ```cmd
-docker run -d --name mavryk-wallet-container -v %cd%\logs:/app/logs mavryk-wallet-image
+docker run -d --name mavryk-wallet-container mavryk-wallet-image
 ```
 
 ---
