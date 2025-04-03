@@ -11,7 +11,7 @@ COPY . .
 
 RUN mkdir -p logs
 
-RUN chmod +x start.sh
+RUN chmod +x run.sh
 
 EXPOSE 3000
 
