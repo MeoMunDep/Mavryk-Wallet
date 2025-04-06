@@ -71,7 +71,9 @@ create_default_configs() {
   "maxConcurrentWallets": 200,
 
   "staking": false,
-  "createToken": true,
+  
+  "depositToken": true,
+  "borrowToken": true,
 
   "sendToken": {
     "USDT": true,
