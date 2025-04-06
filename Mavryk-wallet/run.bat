@@ -12,7 +12,10 @@ if not exist configs.json (
     echo   "restartInterval": 10,>> configs.json
     echo   "maxConcurrentWallets": 200,>> configs.json
     echo   "staking": false,>> configs.json
-    echo   "createVault": true,>> configs.json
+    echo   "createVault": {>> configs.json
+    echo       "USDT": true,>> configs.json
+    echo       "MVRK": true>> configs.json
+    echo   },>> configs.json
     echo   "depositToken": true,>> configs.json
     echo   "borrowToken": true,>> configs.json
     echo   "sendToken": {>> configs.json
