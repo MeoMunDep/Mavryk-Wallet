@@ -71,7 +71,11 @@ create_default_configs() {
   "maxConcurrentWallets": 200,
 
   "staking": false,
-  "createVault": true,  
+
+  "createVault": {
+    "MVRK": true,
+    "USDT": true
+  },
   
   "depositToken": true,
   "borrowToken": true,
