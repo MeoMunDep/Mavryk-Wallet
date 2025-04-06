@@ -74,7 +74,8 @@ create_default_configs() {
 
   "createVault": {
     "MVRK": true,
-    "USDT": true
+    "USDT": true,
+    "amount": [1, 2]
   },
   
   "depositToken": true,
