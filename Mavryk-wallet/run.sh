@@ -71,6 +71,7 @@ create_default_configs() {
   "maxConcurrentWallets": 200,
 
   "staking": false,
+  "createVault": true,  
   
   "depositToken": true,
   "borrowToken": true,
