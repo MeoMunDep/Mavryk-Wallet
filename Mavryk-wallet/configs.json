@@ -7,7 +7,7 @@
 
   "createVault": {
     "MVRK": true,
-    "USDT": true,
+    "USDT": false,
     "amount": [1, 2]
   },
   
