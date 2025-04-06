@@ -5,7 +5,9 @@
 
   "staking": false,
   "createVault": true,
-  "createToken": true,
+  
+  "depositToken": true,
+  "borrowToken": true,
 
   "sendToken": {
     "USDT": true,
