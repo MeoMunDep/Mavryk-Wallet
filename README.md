@@ -113,6 +113,7 @@ Dưới đây là bảng đầy đủ với hướng dẫn chi tiết cho các t
 | `walletDelays`            | `[number, number]` | `[5, 8]`          | Random delay (in seconds) between wallets when performing tasks. |
 | `restartInterval`    | `number`           | `300`             | Time (in seconds) before the bot restarts all wallets. |
 | `maxConcurrentWallets` | `number`           | `100`             | Number of wallets running simultaneously.  |
+| `createVault`                     | `boolean`          | `false`           | Determines whether create new vault is enabled.  |
 | `staking`                     | `boolean`          | `false`           | Determines whether staking is enabled.  |
 | `depositToken`                  | `boolean`          | `true`            | Defines whether the bot should deposit tokens. |
 | `borrowToken`                  | `boolean`          | `true`            | Defines whether the bot should borrow vault. |
