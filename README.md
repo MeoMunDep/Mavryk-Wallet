@@ -86,6 +86,7 @@ Before running the bot, make sure you have installed:
   "maxConcurrentWallets": 10,
 
   "staking": false,
+  "createVault": true,
   "createToken": true,
 
   "sendToken": {
@@ -113,6 +114,7 @@ Dưới đây là bảng đầy đủ với hướng dẫn chi tiết cho các t
 | `maxConcurrentWallets` | `number`           | `100`             | Number of wallets running simultaneously.  |
 | `staking`                     | `boolean`          | `false`           | Determines whether staking is enabled.  |
 | `createToken`                  | `boolean`          | `true`            | Defines whether the bot should create tokens. |
+| `createVault`                  | `boolean`          | `true`            | Defines whether the bot should create vault. |
 | `sendToken`                   | `object`           | N/A               | Contains settings for which tokens should be sent.  |
 | `sendToken.USDT`              | `boolean`          | `true`            | Whether to send USDT. |
 | `sendToken.mMVRK`             | `boolean`          | `true`            | Whether to send mMVRK.  |
