@@ -86,8 +86,9 @@ Before running the bot, make sure you have installed:
   "maxConcurrentWallets": 10,
 
   "staking": false,
-  "createVault": true,
-  "createToken": true,
+
+  "depositToken": true,
+  "borrowToken": true,
 
   "sendToken": {
     "USDT": true,
@@ -113,8 +114,8 @@ Dưới đây là bảng đầy đủ với hướng dẫn chi tiết cho các t
 | `restartInterval`    | `number`           | `300`             | Time (in seconds) before the bot restarts all wallets. |
 | `maxConcurrentWallets` | `number`           | `100`             | Number of wallets running simultaneously.  |
 | `staking`                     | `boolean`          | `false`           | Determines whether staking is enabled.  |
-| `createToken`                  | `boolean`          | `true`            | Defines whether the bot should create tokens. |
-| `createVault`                  | `boolean`          | `true`            | Defines whether the bot should create vault. |
+| `depositToken`                  | `boolean`          | `true`            | Defines whether the bot should deposit tokens. |
+| `borrowToken`                  | `boolean`          | `true`            | Defines whether the bot should borrow vault. |
 | `sendToken`                   | `object`           | N/A               | Contains settings for which tokens should be sent.  |
 | `sendToken.USDT`              | `boolean`          | `true`            | Whether to send USDT. |
 | `sendToken.mMVRK`             | `boolean`          | `true`            | Whether to send mMVRK.  |
