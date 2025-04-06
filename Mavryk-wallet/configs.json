@@ -4,6 +4,7 @@
   "maxConcurrentWallets": 200,
 
   "staking": false,
+  "createVault": true,
   "createToken": true,
 
   "sendToken": {
