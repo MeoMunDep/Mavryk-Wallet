@@ -89,7 +89,8 @@ Before running the bot, make sure you have installed:
 
   "createVault": {
     "MVRK": true,
-    "USDT": true
+    "USDT": true,
+    "amount": [1, 2]
   },
 
   "depositToken": true,
