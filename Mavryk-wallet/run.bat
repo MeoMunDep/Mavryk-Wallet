@@ -14,7 +14,8 @@ if not exist configs.json (
     echo   "staking": false,>> configs.json
     echo   "createVault": {>> configs.json
     echo       "USDT": true,>> configs.json
-    echo       "MVRK": true>> configs.json
+    echo       "MVRK": true,>> configs.json
+    echo       "amount": [1, 2]>> configs.json
     echo   },>> configs.json
     echo   "depositToken": true,>> configs.json
     echo   "borrowToken": true,>> configs.json
