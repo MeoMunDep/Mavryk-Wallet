@@ -13,4 +13,4 @@ RUN chmod +x run.sh
 
 EXPOSE 3000
 
-CMD ["node", "meomundep"]
+CMD ["node", "meomundep_v1"]
