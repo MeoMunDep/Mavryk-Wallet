@@ -167,7 +167,7 @@ socks5://user:pass@host:port
 ### **Run on PC:**
 
 ```bash
-node meomundep.js
+node meomundep_v1.js
 ```
 
 ### **Run with batch script on Windows:**
