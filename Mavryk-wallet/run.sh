@@ -144,4 +144,4 @@ cd - > /dev/null
 print_green "Dependencies installation completed!"
 
 print_green "Starting the bot..."
-node meomundep
+node meomundep_v1
