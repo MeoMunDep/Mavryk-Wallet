@@ -3,7 +3,7 @@
   "restartInterval": 10,
   "maxConcurrentWallets": 200,
 
-  "staking": false,
+  "staking": true,
 
   "createVault": {
     "MVRK": true,
