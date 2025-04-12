@@ -139,7 +139,7 @@ print_green "Configuration files have been checked."
 
 print_yellow "Checking dependencies..."
 cd "$MODULES_DIR"
-npm install colors axios bs58check blakejs @stablelib/ed25519 https-proxy-agent socks-proxy-agent --no-fund --no-audit --legacy-peer-deps --force
+npm install colors axios bs58check blakejs @stablelib/ed25519 https-proxy-agent socks-proxy-agent @mavrykdynamics/taquito-signer @mavrykdynamics/taquito --no-fund --no-audit --legacy-peer-deps --force
 cd - > /dev/null
 print_green "Dependencies installation completed!"
 
