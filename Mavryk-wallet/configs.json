@@ -11,8 +11,11 @@
     "amount": [1, 2]
   },
   
-  "depositToken": true,
-  "borrowToken": true,
+  "depositEarn": {
+    "MVRK": true,
+    "USDT": false,
+    "amount": [10, 20]
+  },
 
   "sendToken": {
     "USDT": true,
