@@ -109,30 +109,33 @@ Before running the bot, make sure you have installed:
 }
 
 ```
+---
 
-Explanation of each parameter:
-
-Dưới đây là bảng đầy đủ với hướng dẫn chi tiết cho các tham số trong file `config.json` mà bạn cung cấp:
+### 🔧 **(Configuration Parameters)**
 
 | **Parameter Name**            | **Data Type**      | **Default Value** | **Description**                                                                   |
-| ----------------------------- | ------------------ | ----------------- | --------------------------------------------------------------------------------- |
-| `walletDelays`            | `[number, number]` | `[5, 8]`          | Random delay (in seconds) between wallets when performing tasks. |
-| `restartInterval`    | `number`           | `300`             | Time (in seconds) before the bot restarts all wallets. |
-| `maxConcurrentWallets` | `number`           | `100`             | Number of wallets running simultaneously.  |
-| `createVault`                     | `boolean`          | `false`           | Determines whether create new vault is enabled.  |
-| `createVault.USDT`                     | `boolean`          | `false`           | Whether to create USDT vault.  |
-| `createVault.MVRK`                     | `boolean`          | `false`           | Whether to create MVRK vault.  |
-| `staking`                     | `boolean`          | `false`           | Determines whether staking is enabled.  |
-| `depositToken`                  | `boolean`          | `true`            | Defines whether the bot should deposit tokens. |
-| `borrowToken`                  | `boolean`          | `true`            | Defines whether the bot should borrow vault. |
-| `sendToken`                   | `object`           | N/A               | Contains settings for which tokens should be sent.  |
-| `sendToken.USDT`              | `boolean`          | `true`            | Whether to send USDT. |
-| `sendToken.mMVRK`             | `boolean`          | `true`            | Whether to send mMVRK.  |
-| `sendToken.MVN`               | `boolean`          | `true`            | Whether to send MVN.  |
-| `sendToken.amount`            | `[number, number]` | `[1, 2]`          | Range of the amount of tokens to send (in specified tokens).  |
-| `sendToInternalAddresses`     | `boolean`          | `true`            | Whether to send tokens to internal addresses.  |
-| `receiverAddresses`           | `array of string`  | N/A               | List of receiver addresses. |
+|------------------------------|--------------------|-------------------|-----------------------------------------------------------------------------------|
+| `walletDelays`               | `[number, number]` | `[5, 8]`           | Random delay (in seconds) between wallets when performing tasks.                 |
+| `restartInterval`            | `number`           | `300`             | Time (in seconds) before the bot restarts all wallets.                           |
+| `maxConcurrentWallets`       | `number`           | `100`             | Number of wallets running simultaneously.                                        |
+| `staking`                    | `boolean`          | `false`           | Determines whether staking is enabled.                                           |
+| `createVault`                | `object`           | `false`           | Determines whether creating new vaults is enabled.                               |
+| `createVault.MVRK`           | `boolean`          | `false`           | Whether to create MVRK vault.                                                    |
+| `createVault.USDT`           | `boolean`          | `false`           | Whether to create USDT vault.                                                    |
+| `createVault.amount`         | `[number, number]` | `[1, 2]`           | Range of token amount to create vault with.                                      |
+| `depositEarn`                | `object`           | `false`           | Determines whether depositing into earn vaults is enabled.                       |
+| `depositEarn.MVRK`           | `boolean`          | `false`           | Whether to deposit MVRK into earn vault.                                         |
+| `depositEarn.USDT`           | `boolean`          | `false`           | Whether to deposit USDT into earn vault.                                         |
+| `depositEarn.amount`         | `[number, number]` | `[10, 20]`         | Range of token amount to deposit into earn vault.                                |
+| `sendToken`                  | `object`           | N/A               | Contains settings for which tokens should be sent.                               |
+| `sendToken.USDT`             | `boolean`          | `true`            | Whether to send USDT.                                                            |
+| `sendToken.mMVRK`            | `boolean`          | `true`            | Whether to send mMVRK.                                                           |
+| `sendToken.MVN`              | `boolean`          | `true`            | Whether to send MVN.                                                             |
+| `sendToken.amount`           | `[number, number]` | `[1, 2]`           | Range of the amount of tokens to send (in specified tokens).                     |
+| `sendToInternalAddresses`    | `boolean`          | `true`            | Whether to send tokens to internal addresses (addresses managed by this bot).    |
+| `receiverAddresses`          | `array of string`  | `[]`              | List of destination addresses for token transfers.                               |
 
+---
 
 ### 2. `privateKeys.txt` - 🗂️ Wallet Privatekey
 
