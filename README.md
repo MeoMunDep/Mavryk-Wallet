@@ -101,7 +101,7 @@ Before running the bot, make sure you have installed:
     "mMVRK": true,
     "MVN": true,
     "amount": [1, 2]
-}
+},
 
   "sendToInternalAddresses": true,
   "receiverAddresses": ["mv1LkTHEzHJ3pRw159Qv6Q2We4EyTH6RgS2X"]
