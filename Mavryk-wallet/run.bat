@@ -68,7 +68,7 @@ if exist "..\node_modules" (
 echo Dependencies installation completed!
 
 echo Starting the bot...
-node meomundep_v1
+node tx_meomundep
 
 pause
 exit
