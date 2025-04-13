@@ -81,6 +81,12 @@ Before running the bot, make sure you have installed:
 
 ```json
 {
+  "faucet": {
+    "maxCaptchaAttempts": 20,
+    "faucetAddress": "",
+    "2captchaApiKey": ""
+  },
+
   "walletDelays": [1, 1],
   "restartInterval": 300,
   "maxConcurrentWallets": 10,
@@ -170,7 +176,7 @@ socks5://user:pass@host:port
 ### **Run on PC:**
 
 ```bash
-node meomundep_v1.js
+node tx_meomundep.js
 ```
 
 ### **Run with batch script on Windows:**
