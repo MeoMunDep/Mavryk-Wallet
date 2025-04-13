@@ -1,4 +1,11 @@
 {
+    "faucet": {
+    "maxCaptchaAttempts": 20,
+    "faucetAddress": "",
+    "2captchaApiKey": ""
+  },
+
+  
   "walletDelays": [1, 1],
   "restartInterval": 10,
   "maxConcurrentWallets": 200,
