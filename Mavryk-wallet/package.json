@@ -1,12 +1,17 @@
 {
+  "type": "module",
   "dependencies": {
     "@stablelib/ed25519": "^2.0.2",
     "axios": "^1.8.4",
     "blakejs": "^1.2.1",
     "bs58check": "^4.0.0",
+    "bip39": "^3.1.0",
     "colors": "^1.4.0",
+    "ed25519-hd-key": "^1.1.4",
     "https-proxy-agent": "^7.0.6",
-    "socks-proxy-agent": "^8.0.5"
-  },
-  "type":"module"
+    "socks-proxy-agent": "^8.0.5",
+    "@tzkt/sdk-api": "^2.0.0",
+    "@mavrykdynamics/taquito": "^18.2.0",
+    "@mavrykdynamics/taquito-signer": "^18.2.0"
+  }
 }
