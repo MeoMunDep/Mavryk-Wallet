@@ -120,6 +120,9 @@ Before running the bot, make sure you have installed:
 
 | **Parameter Name**            | **Data Type**      | **Default Value** | **Description**                                                                   |
 |------------------------------|--------------------|-------------------|-----------------------------------------------------------------------------------|
+| `2captchaSolver`             | `object`           | `{}`              | Settings related to solving CAPTCHA using 2Captcha.                               |
+| `2captchaSolver.maxCaptchaAttempts` | `number`     | `20`              | Maximum number of attempts to solve a CAPTCHA before skipping.                    |
+| `2captchaSolver.2captchaApiKey`     | `string`     | `""`              | Your 2Captcha API key used for solving CAPTCHA challenges.                        |
 | `walletDelays`               | `[number, number]` | `[5, 8]`           | Random delay (in seconds) between wallets when performing tasks.                 |
 | `restartInterval`            | `number`           | `300`             | Time (in seconds) before the bot restarts all wallets.                           |
 | `maxConcurrentWallets`       | `number`           | `100`             | Number of wallets running simultaneously.                                        |
@@ -128,11 +131,9 @@ Before running the bot, make sure you have installed:
 | `createVault.MVRK`           | `boolean`          | `false`           | Whether to create MVRK vault.                                                    |
 | `createVault.USDT`           | `boolean`          | `false`           | Whether to create USDT vault.                                                    |
 | `createVault.amount`         | `[number, number]` | `[1, 2]`           | Range of token amount to create vault with.                                      |
-| `depositEarn`                | `object`           | `false`           | Determines whether depositing into earn vaults is enabled.                       |
-| `depositEarn.MVRK`           | `boolean`          | `false`           | Whether to deposit MVRK into earn vault.                                         |
-| `depositEarn.USDT`           | `boolean`          | `false`           | Whether to deposit USDT into earn vault.                                         |
-| `depositEarn.amount`         | `[number, number]` | `[10, 20]`         | Range of token amount to deposit into earn vault.                                |
-| `sendToken`                  | `object`           | N/A               | Contains settings for which tokens should be sent.                               |
+| `depositToken`               | `boolean`          | `false`           | Whether to deposit tokens into the vault after creation.                         |
+| `borrowToken`                | `boolean`          | `false`           | Whether to borrow tokens against the vault.                                      |
+| `sendToken`                  | `object`           | `{}`             | Contains settings for which tokens should be sent.                               |
 | `sendToken.USDT`             | `boolean`          | `true`            | Whether to send USDT.                                                            |
 | `sendToken.mMVRK`            | `boolean`          | `true`            | Whether to send mMVRK.                                                           |
 | `sendToken.MVN`              | `boolean`          | `true`            | Whether to send MVN.                                                             |
