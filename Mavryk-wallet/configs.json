@@ -1,5 +1,5 @@
 {
- "2captchaSolver": {
+  "2captchaSolver": {
     "maxCaptchaAttempts": 20,
     "2captchaApiKey": ""
   },
