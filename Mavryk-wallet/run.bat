@@ -59,8 +59,7 @@ echo Checking dependencies...
 if exist "..\node_modules" (
     echo Using node_modules from parent directory...
     cd ..
-    CALL npm install colors axios bs58check blakejs @stablelib/ed25519 https-proxy-agent socks-proxy-agent @tzkt/sdk-api @mavrykdynamics/taquito-signer @mavrykdynamics/taquito bip39 ed25519-hd-key
- --no-fund --no-audit --legacy-peer-deps --force
+    CALL npm install colors axios bs58check blakejs @stablelib/ed25519 https-proxy-agent socks-proxy-agent @tzkt/sdk-api @mavrykdynamics/taquito-signer @mavrykdynamics/taquito bip39 ed25519-hd-key --no-fund --no-audit --legacy-peer-deps --force
     cd %~dp0
 ) else (
     echo Installing dependencies in current directory...
