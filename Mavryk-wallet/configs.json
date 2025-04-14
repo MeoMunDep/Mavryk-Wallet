@@ -30,5 +30,11 @@
   },
 
   "sendToInternalAddresses": true,
-  "receiverAddresses": ["add_your_address_here"]
+  "receiverAddresses": [
+    "add_your_address_here",
+    "add_your_address_here",
+    "add_your_address_here",
+    "add_your_address_here",
+    "add_your_address_here",
+  ]
 }
