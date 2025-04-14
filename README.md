@@ -81,9 +81,8 @@ Before running the bot, make sure you have installed:
 
 ```json
 {
-  "faucet": {
+  "2captchaSolver": {
     "maxCaptchaAttempts": 20,
-    "faucetAddress": "",
     "2captchaApiKey": ""
   },
 
