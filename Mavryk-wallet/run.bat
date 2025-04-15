@@ -7,31 +7,61 @@ cd %~dp0
 echo Checking configuration files...
 
 if not exist configs.json (
-    echo {> configs.json
-    echo   "walletDelays": [1, 1],>> configs.json
-    echo   "restartInterval": 10,>> configs.json
-    echo   "maxConcurrentWallets": 200,>> configs.json
-    echo   "staking": false,>> configs.json
-    echo   "createVault": {>> configs.json
-    echo       "USDT": true,>> configs.json
-    echo       "MVRK": true,>> configs.json
-    echo       "amount": [1, 2]>> configs.json
-    echo   },>> configs.json
-    echo   "depositToken": true,>> configs.json
-    echo   "borrowToken": true,>> configs.json
-    echo   "sendToken": {>> configs.json
-    echo       "USDT": true,>> configs.json
-    echo       "mMVRK": true,>> configs.json
-    echo       "MVN": true,>> configs.json
-    echo       "OCEAN": true,>> configs.json
-    echo       "QUEEN": true,>> configs.json
-    echo       "MARS1": true,>> configs.json
-    echo       "NTBM": true,>> configs.json
-    echo       "amount": [1, 2]>> configs.json
-    echo   },>> configs.json
-    echo   "sendToInternalAddresses": true,>> configs.json
-    echo   "receiverAddresses": ["mv1LkTHEzHJ3pRw159Qv6Q2We4EyTH6RgS2X"]>> configs.json
-    echo }>> configs.json
+    (
+        echo {
+        echo   "2captchaSolver": {
+        echo     "maxCaptchaAttempts": 20,
+        echo     "2captchaApiKey": ""
+        echo   },
+        echo   "walletDelays": [1, 1],
+        echo   "restartInterval": 10,
+        echo   "maxConcurrentWallets": 200,
+        echo   "staking": true,
+        echo   "buyToken": {
+        echo     "OCEAN": true,
+        echo     "MARS1": true,
+        echo     "NTBM": true,
+        echo     "QUEEN": true,
+        echo     "amount": [0.1, 0.2]
+        echo   },
+        echo   "sellToken": {
+        echo     "OCEAN": true,
+        echo     "MARS1": true,
+        echo     "NTBM": true,
+        echo     "QUEEN": true,
+        echo     "amount": [0.1, 0.2]
+        echo   },
+        echo   "createVault": {
+        echo     "MVRK": true,
+        echo     "USDT": false,
+        echo     "amount": [1, 2]
+        echo   },
+        echo   "depositEarn": {
+        echo     "MVRK": true,
+        echo     "USDT": false,
+        echo     "amount": [10, 20]
+        echo   },
+        echo   "sendToken": {
+        echo     "MVRK": true,
+        echo     "USDT": true,
+        echo     "mMVRK": true,
+        echo     "MVN": true,
+        echo     "QUEEN": true,
+        echo     "OCEAN": true,
+        echo     "MARS1": true,
+        echo     "NTBM": true,
+        echo     "amount": [0.1, 0.2]
+        echo   },
+        echo   "sendToInternalAddresses": true,
+        echo   "receiverAddresses": [
+        echo     "add_your_address_here",
+        echo     "add_your_address_here",
+        echo     "add_your_address_here",
+        echo     "add_your_address_here",
+        echo     "add_your_address_here"
+        echo   ]
+        echo }
+    ) > configs.json
 )
 
 
