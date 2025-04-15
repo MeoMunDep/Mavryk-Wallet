@@ -55,7 +55,7 @@ Before running the bot, make sure you have installed:
 
    NOT RECOMMEND:
    ```bash
-   npm install colors axios bs58check blakejs @stablelib/ed25519 https-proxy-agent socks-proxy-agent @tzkt/sdk-api @mavrykdynamics/taquito-signer @mavrykdynamics/taquito bip39 ed25519-hd-key --no-fund --no-audit --legacy-peer-deps --force
+   npm install colors axios bs58check blakejs @stablelib/ed25519 @mavrykdynamics/beacon-sdk https-proxy-agent socks-proxy-agent @tzkt/sdk-api @mavrykdynamics/taquito-signer @mavrykdynamics/taquito bip39 ed25519-hd-key --no-fund --no-audit --legacy-peer-deps --force
    ```
 4. **Prepare configuration files** ([See details](#bot-configuration))
 
