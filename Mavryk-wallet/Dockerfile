@@ -5,7 +5,7 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install colors axios bs58check blakejs @stablelib/ed25519 https-proxy-agent @mavrykdynamics/beacon-sdk socks-proxy-agent @tzkt/sdk-api @mavrykdynamics/taquito-signer @mavrykdynamics/taquito bip39 ed25519-hd-key --no-fund --no-audit --legacy-peer-deps --force
+RUN npm install colors axios bs58check blakejs @stablelib/ed25519 https-proxy-agent @mavrykdynamics/beacon-types @mavrykdynamics/beacon-sdk socks-proxy-agent @tzkt/sdk-api @mavrykdynamics/taquito-signer @mavrykdynamics/taquito bip39 ed25519-hd-key --no-fund --no-audit --legacy-peer-deps --force
 
 COPY . .
 
