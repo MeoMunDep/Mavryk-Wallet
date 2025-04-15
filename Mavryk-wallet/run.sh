@@ -82,10 +82,15 @@ create_default_configs() {
   "borrowToken": true,
 
   "sendToken": {
+    "MVRK": true,
     "USDT": true,
     "mMVRK": true,
     "MVN": true,
-    "amount": [1, 2]
+    "QUEEN": true,
+    "OCEAN": true,
+    "MARS1": true,
+    "NTBM": true,
+    "amount": [0.1, 0.2]
   },
 
   "sendToInternalAddresses": true,
