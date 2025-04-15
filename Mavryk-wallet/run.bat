@@ -23,6 +23,10 @@ if not exist configs.json (
     echo       "USDT": true,>> configs.json
     echo       "mMVRK": true,>> configs.json
     echo       "MVN": true,>> configs.json
+    echo       "OCEAN": true,>> configs.json
+    echo       "QUEEN": true,>> configs.json
+    echo       "MARS1": true,>> configs.json
+    echo       "NTBM": true,>> configs.json
     echo       "amount": [1, 2]>> configs.json
     echo   },>> configs.json
     echo   "sendToInternalAddresses": true,>> configs.json
