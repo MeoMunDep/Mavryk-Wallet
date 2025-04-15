@@ -72,6 +72,22 @@ create_default_configs() {
 
   "staking": false,
 
+   "buyToken": {
+    "OCEAN": true,
+    "MARS1": true,
+    "NTBM": true,
+    "QUEEN": true,
+    "amount": [0.1, 0.2]
+  },
+
+  "sellToken": {
+    "OCEAN": true,
+    "MARS1": true,
+    "NTBM": true,
+    "QUEEN": true,
+    "amount": [0.1, 0.2]
+  },
+
   "createVault": {
     "MVRK": true,
     "USDT": true,
