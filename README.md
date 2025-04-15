@@ -102,11 +102,16 @@ Before running the bot, make sure you have installed:
   "borrowToken": true,
 
   "sendToken": {
+    "MVRK": true,
     "USDT": true,
     "mMVRK": true,
     "MVN": true,
-    "amount": [1, 2]
-},
+    "QUEEN": true,
+    "OCEAN": true,
+    "MARS1": true,
+    "NTBM": true,
+    "amount": [0.1, 0.2]
+  },
 
   "sendToInternalAddresses": true,
   "receiverAddresses": ["mv1LkTHEzHJ3pRw159Qv6Q2We4EyTH6RgS2X"]
@@ -134,9 +139,7 @@ Before running the bot, make sure you have installed:
 | `depositToken`               | `boolean`          | `false`           | Whether to deposit tokens into the vault after creation.                         |
 | `borrowToken`                | `boolean`          | `false`           | Whether to borrow tokens against the vault.                                      |
 | `sendToken`                  | `object`           | `{}`             | Contains settings for which tokens should be sent.                               |
-| `sendToken.USDT`             | `boolean`          | `true`            | Whether to send USDT.                                                            |
-| `sendToken.mMVRK`            | `boolean`          | `true`            | Whether to send mMVRK.                                                           |
-| `sendToken.MVN`              | `boolean`          | `true`            | Whether to send MVN.                                                             |
+| `sendToken.xxx`             | `boolean`          | `true`            | Whether to send token x.                                                            |
 | `sendToken.amount`           | `[number, number]` | `[1, 2]`           | Range of the amount of tokens to send (in specified tokens).                     |
 | `sendToInternalAddresses`    | `boolean`          | `true`            | Whether to send tokens to internal addresses (addresses managed by this bot).    |
 | `receiverAddresses`          | `array of string`  | `[]`              | List of destination addresses for token transfers.                               |
