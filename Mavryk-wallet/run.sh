@@ -160,7 +160,6 @@ print_green "Configuration files have been checked."
 
 print_yellow "Checking dependencies..."
 cd "$MODULES_DIR"
-npm install colors axios bs58check blakejs @mavrykdynamics/beacon-blockchain-substrate @mavrykdynamics/beacon-types @mavrykdynamics/beacon-sdk @stablelib/ed25519 https-proxy-agent socks-proxy-agent @tzkt/sdk-api @mavrykdynamics/taquito-signer @mavrykdynamics/taquito bip39 ed25519-hd-key --no-fund --no-audit --legacy-peer-deps --force
 cd - > /dev/null
 print_green "Dependencies installation completed!"
 
