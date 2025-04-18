@@ -7,7 +7,6 @@ NC='\033[0m'
 
 echo -ne "\033]0;Mavryk Wallet Bot by @MeoMunDep\007"
 
-
 print_green() {
     echo -e "${GREEN}$1${NC}"
 }
