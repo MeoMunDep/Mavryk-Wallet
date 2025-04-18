@@ -79,9 +79,9 @@ Before running the bot, make sure you have installed:
   "restartInterval": 300,
   "maxConcurrentWallets": 10,
 
-  "staking": false,
+  "staking": true,
 
- "buyToken": {
+  "buyToken": {
     "OCEAN": false,
     "MARS1": false,
     "NTBM": false,
@@ -111,20 +111,21 @@ Before running the bot, make sure you have installed:
     "USDT": true,
     "mMVRK": true,
     "MVN": true,
-    "QUEEN": true,
-    "OCEAN": true,
-    "MARS1": true,
-    "NTBM": true,
+    "QUEEN": false,
+    "OCEAN": false,
+    "MARS1": false,
+    "NTBM": false,
     "amount": [0.1, 0.2]
   },
 
   "sendToInternalAddresses": true,
   "receiverAddresses": [
       "add_your_wallet_here",
+      "add_your_wallet_here",
+      "add_your_wallet_here",
+      "add_your_wallet_here",
       "add_your_wallet_here"
-      "add_your_wallet_here"
-      "add_your_wallet_here"
-]
+   ]
 
 }
 
