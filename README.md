@@ -15,7 +15,7 @@ Welcome to the bot setup guide! Follow the steps below to install and configure 
    - [Install via Docker](#install-via-docker)
 3. [Bot Configuration](#bot-configuration)
    - [`configs.json`](#1-configsjson)
-   - [`privateKeys.txt`](#4-privateKeystxt)
+   - [`privateKeys.txt`](#2-privateKeystxt)
    - [`proxies.txt`](#3-proxiestxt)
 4. [Running the Bot](#running-the-bot)
 5. [Updating the Bot](#updating-the-bot)
@@ -46,18 +46,7 @@ Before running the bot, make sure you have installed:
    git clone https://github.com/MeoMunDep/mavryk-wallet.git
    cd mavryk-wallet/mavryk-wallet
    ```
-2. **Install required libraries**:
-   RECOMMEND:
-
-   ```bash
-   npm install 
-   ```
-
-   NOT RECOMMEND:
-   ```bash
-   npm install colors axios bs58check blakejs @stablelib/ed25519 @mavrykdynamics/beacon-blockchain-substrate @mavrykdynamics/beacon-types @mavrykdynamics/beacon-sdk https-proxy-agent socks-proxy-agent @tzkt/sdk-api @mavrykdynamics/taquito-signer @mavrykdynamics/taquito bip39 ed25519-hd-key --no-fund --no-audit --legacy-peer-deps --force
-   ```
-4. **Prepare configuration files** ([See details](#bot-configuration))
+2. **Prepare configuration files** ([See details](#bot-configuration))
 
 ### 🔹 Manual Installation (Without Git)
 
