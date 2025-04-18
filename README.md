@@ -82,18 +82,18 @@ Before running the bot, make sure you have installed:
   "staking": false,
 
  "buyToken": {
-    "OCEAN": true,
-    "MARS1": true,
-    "NTBM": true,
-    "QUEEN": true,
+    "OCEAN": false,
+    "MARS1": false,
+    "NTBM": false,
+    "QUEEN": false,
     "amount": [0.1, 0.2]
   },
 
   "sellToken": {
-    "OCEAN": true,
-    "MARS1": true,
-    "NTBM": true,
-    "QUEEN": true,
+    "OCEAN": false,
+    "MARS1": false,
+    "NTBM": false,
+    "QUEEN": false,
     "amount": [0.1, 0.2]
   },
 
@@ -119,7 +119,12 @@ Before running the bot, make sure you have installed:
   },
 
   "sendToInternalAddresses": true,
-  "receiverAddresses": ["mv1LkTHEzHJ3pRw159Qv6Q2We4EyTH6RgS2X"]
+  "receiverAddresses": [
+      "add_your_wallet_here",
+      "add_your_wallet_here"
+      "add_your_wallet_here"
+      "add_your_wallet_here"
+]
 
 }
 
