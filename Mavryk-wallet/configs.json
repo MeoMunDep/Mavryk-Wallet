@@ -11,18 +11,18 @@
   "staking": true,
 
    "buyToken": {
-    "OCEAN": true,
-    "MARS1": true,
-    "NTBM": true,
-    "QUEEN": true,
+    "OCEAN": false,
+    "MARS1": false,
+    "NTBM": false,
+    "QUEEN": false,
     "amount": [0.1, 0.2]
   },
 
   "sellToken": {
-    "OCEAN": true,
-    "MARS1": true,
-    "NTBM": true,
-    "QUEEN": true,
+    "OCEAN": false,
+    "MARS1": false,
+    "NTBM": false,
+    "QUEEN": false,
     "amount": [0.1, 0.2]
   },
 
@@ -43,10 +43,10 @@
     "USDT": true,
     "mMVRK": true,
     "MVN": true,
-    "QUEEN": true,
-    "OCEAN": true,
-    "MARS1": true,
-    "NTBM": true,
+    "QUEEN": false,
+    "OCEAN": false,
+    "MARS1": false,
+    "NTBM": false,
     "amount": [0.1, 0.2]
   },
 
