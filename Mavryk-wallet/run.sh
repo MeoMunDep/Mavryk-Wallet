@@ -66,25 +66,25 @@ check_git
 
 create_default_configs() {
     cat > configs.json << EOL
-"walletDelays": [1, 1],
+  "walletDelays": [1, 1],
   "restartInterval": 10,
   "maxConcurrentWallets": 200,
 
-  "staking": false,
+  "staking": true,
 
    "buyToken": {
-    "OCEAN": true,
-    "MARS1": true,
-    "NTBM": true,
-    "QUEEN": true,
+    "OCEAN": false,
+    "MARS1": false,
+    "NTBM": false,
+    "QUEEN": false,
     "amount": [0.1, 0.2]
   },
 
   "sellToken": {
-    "OCEAN": true,
-    "MARS1": true,
-    "NTBM": true,
-    "QUEEN": true,
+    "OCEAN": false,
+    "MARS1": false,
+    "NTBM": false,
+    "QUEEN": false,
     "amount": [0.1, 0.2]
   },
 
@@ -102,32 +102,21 @@ create_default_configs() {
     "USDT": true,
     "mMVRK": true,
     "MVN": true,
-    "QUEEN": true,
-    "OCEAN": true,
-    "MARS1": true,
-    "NTBM": true,
+    "QUEEN": false,
+    "OCEAN": false,
+    "MARS1": false,
+    "NTBM": false,
     "amount": [0.1, 0.2]
   },
 
   "sendToInternalAddresses": true,
-  "receiverAddresses": ["mv1LkTHEzHJ3pRw159Qv6Q2We4EyTH6RgS2X"]
-}
-EOL
-}
-
-create_package_json() {
-    cat > package.json << EOL
-{
-  "dependencies": {
-    "@stablelib/ed25519": "^2.0.2",
-    "axios": "^1.8.4",
-    "blakejs": "^1.2.1",
-    "bs58check": "^4.0.0",
-    "colors": "^1.4.0",
-    "https-proxy-agent": "^7.0.6",
-    "socks-proxy-agent": "^8.0.5"
-  },
-  "type":"module"
+  "receiverAddresses": [
+      "add_your_wallet_here",
+      "add_your_wallet_here",
+      "add_your_wallet_here",
+      "add_your_wallet_here",
+      "add_your_wallet_here"
+  ]
 }
 EOL
 }
