@@ -34,7 +34,7 @@
   
   "depositEarn": {
     "MVRK": true,
-    "USDT": false,
+    "USDT": true,
     "amount": [10, 20]
   },
 
