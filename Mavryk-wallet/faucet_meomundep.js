@@ -1,1 +1,1 @@
-console.log(`Almost there, but the server is too lag...`)
+console.log(`We gonna do it guys!`)
