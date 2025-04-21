@@ -73,7 +73,7 @@ if not exist configs.json (
 
 echo Configuration files checked.
 
-echo Starting the bot...
+echo Starting the bot, wait a few minutes to download all necessary things...
 node tx_meomundep
 
 pause
