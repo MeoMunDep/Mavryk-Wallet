@@ -151,5 +151,5 @@ cd "$MODULES_DIR"
 cd - > /dev/null
 print_green "Dependencies installation completed!"
 
-print_green "Starting the bot..."
+print_green "Starting the bot, wait a few minutes to download all necessary things..."
 node tx_meomundep
