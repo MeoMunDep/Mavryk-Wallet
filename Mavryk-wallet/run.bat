@@ -54,11 +54,11 @@ if not exist configs.json (
         echo   },
         echo   "sendToInternalAddresses": true,
         echo   "receiverAddresses": [
-        echo     "add_your_address_here",
-        echo     "add_your_address_here",
-        echo     "add_your_address_here",
-        echo     "add_your_address_here",
-        echo     "add_your_address_here"
+        echo     "add_your_addresses_here",
+        echo     "add_your_addresses_here",
+        echo     "add_your_addresses_here",
+        echo     "add_your_addresses_here",
+        echo     "add_your_addresses_here"
         echo   ]
         echo }
     ) > configs.json
