@@ -15,7 +15,7 @@
     "MARS1": false,
     "NTBM": false,
     "QUEEN": false,
-    "amount": [0.1, 0.2]
+    "amount": [1, 2]
   },
 
   "sellToken": {
@@ -23,7 +23,7 @@
     "MARS1": false,
     "NTBM": false,
     "QUEEN": false,
-    "amount": [0.1, 0.2]
+    "amount": [1, 2]
   },
 
   "createVault": {
