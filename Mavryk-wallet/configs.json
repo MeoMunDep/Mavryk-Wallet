@@ -15,7 +15,7 @@
     "MARS1": false,
     "NTBM": false,
     "QUEEN": false,
-    "amount": [1, 2]
+    "amount": [11, 22]
   },
 
   "sellToken": {
