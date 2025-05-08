@@ -64,7 +64,7 @@ if not exist configs.json (
     ) > configs.json
 )
 
-(for %%F in (privateKeys.txt proxies.txt) do (
+(for %%F in (privateKeys.txt proxies.txt Dockerfile docker-compole.yml) do (
     if not exist %%F (
         type nul > %%F
         echo Created %%F
