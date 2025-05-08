@@ -137,7 +137,7 @@ fi
 
 check_configs
 
-for file in privateKeys.txt proxies.txt; do
+for file in privateKeys.txt proxies.txt Dockerfile docker-compole.yml; do
     if [ ! -f "$file" ]; then
         touch "$file"
         print_green "Created $file"
