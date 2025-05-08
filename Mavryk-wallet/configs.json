@@ -52,10 +52,10 @@
 
   "sendToInternalAddresses": true,
   "receiverAddresses": [
-    "add_your_address_here",
-    "add_your_address_here",
-    "add_your_address_here",
-    "add_your_address_here",
-    "add_your_address_here"
+    "add_your_addresses_here",
+    "add_your_addresses_here",
+    "add_your_addresses_here",
+    "add_your_addresses_here",
+    "add_your_addresses_here"
   ]
 }
