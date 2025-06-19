@@ -4,6 +4,9 @@ color 0A
 
 cd %~dp0
 
+echo Installing Node.js dependencies...
+npm install
+
 echo Checking configuration files...
 
 if not exist configs.json (
