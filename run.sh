@@ -146,8 +146,9 @@ done
 
 print_green "Configuration files have been checked."
 
-print_yellow "Checking dependencies..."
+print_yellow "Installing dependencies..."
 cd "$MODULES_DIR"
+npm i
 cd - > /dev/null
 print_green "Dependencies installation completed!"
 
