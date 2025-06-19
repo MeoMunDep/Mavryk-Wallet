@@ -6,7 +6,7 @@
   "scripts": {
     "tx": "node tx_meomundep.js"
     "faucet": "node faucet_meomundep.js",
-    "verify": "node submit_wallets_meomundep.js",
+    "submit": "node submit_wallets_meomundep.js",
   },
   "dependencies": {
     "@mavrykdynamics/taquito": "^20.0.2",
