@@ -1,72 +1,100 @@
-### 🚀 Bot Setup Guide
+# 🚀 Mavryk Bot Setup Guide by @Meomundep
 
-Welcome to the bot setup guide! Follow the steps below to install and configure the bot correctly. This guide is designed for new users, with clear explanations for each step.
+<details>
+<summary>📱 <strong>Mobile Users (Termux)</strong></summary>
 
-> 📱 **For Mobile Users (Termux):** [View the guide here](https://github.com/MeoMunDep/Guides-for-using-my-script-on-termux)
+For Android users running Termux, check out the [specialized mobile guide](https://github.com/MeoMunDep/Guides-for-using-my-script-on-termux) for optimized setup instructions.
+</details>
+
+---
+
+## 📋 Quick Summary
+
+This automated bot performs multiple Mavryk blockchain operations including:
+- **Token Trading**: Buy/sell OCEAN, MARS1, NTBM, QUEEN
+- **DeFi Operations**: Create vaults, deposit/borrow tokens
+- **Token Management**: Send MVRK, USDT, mMVRK, MVN tokens
+- **Staking**: Automated staking functionality
+- **Multi-wallet Support**: Concurrent wallet management with proxy support
 
 ---
 
 ## 📌 Table of Contents
 
-1. [System Requirements](#system-requirements)
-2. [Installing the Bot](#installing-the-bot)
-   - [Install via Git](#install-via-git)
-   - [Manual Installation](#manual-installation)
-   - [Install via Docker](#install-via-docker)
-3. [Bot Configuration](#bot-configuration)
-   - [`configs.json`](#1-configsjson)
-   - [`privateKeys.txt`](#2-privateKeystxt)
-   - [`proxies.txt`](#3-proxiestxt)
-4. [Running the Bot](#running-the-bot)
-5. [Updating the Bot](#updating-the-bot)
-6. [Contact & Support](#contact-support)
+<details>
+<summary>Click to expand navigation</summary>
+
+1. [System Requirements](#-system-requirements)
+2. [Installation Methods](#-installation-methods)
+3. [Configuration Setup](#-configuration-setup)
+4. [Running the Bot](#-running-the-bot)
+5. [Maintenance](#-maintenance)
+6. [Support](#-support)
+</details>
 
 ---
 
-## 📌 System Requirements
+## 🔧 System Requirements
 
-Before running the bot, make sure you have installed:
+<details>
+<summary>Prerequisites & Downloads</summary>
 
-- **Node.js** (Version: `22.11.0`)
-- **npm** (Version: `10.9.0`)
-- **Git** (For downloading and updating the bot easily)
-- **Docker** _(Optional: If you want to run the bot in a container)_
+### Required Software
+- **Node.js**: Version `22.11.0` 
+- **npm**: Version `10.9.0`
+- **Git**: For easy updates
+- **Docker**: Optional containerization
 
-📥 **Download Node.js and npm here:** [Download Link](https://t.me/KeoAirDropFreeNe/257/1462).
-📥 **Download Git here:** [Download Link](https://t.me/KeoAirDropFreeNe/257/60831).
-
----
-
-## 📌 Installing the Bot
-
-### 🔹 Install via Git
-
-1. **Download the bot**:
-   ```bash
-   git clone https://github.com/MeoMunDep/mavryk-wallet.git
-   cd mavryk-wallet/mavryk-wallet
-   ```
-2. **Prepare configuration files** ([See details](#bot-configuration))
-
-### 🔹 Manual Installation (Without Git)
-
-1. **Download and extract the bot** into a folder on your computer.
-2. **Install required libraries** (same as Step 2 above).
-
-### 🔹 Install via Docker
-
-1. **Install Docker** if you haven’t already: [Docker Installation Guide](https://t.me/KeoAirDropFreeNe/257/60831).
-2. **Build and run the bot using Docker**:
-   ```bash
-   docker build -t mavryk-wallet-image .
-   docker run -d --name mavryk-wallet-container mavryk-wallet-image
-   ```
+### Download Links
+- 📥 [Node.js & npm](https://t.me/KeoAirDropFreeNe/257/1462)
+- 📥 [Git](https://t.me/KeoAirDropFreeNe/257/60831)
+- 📥 [Docker Installation Guide](https://t.me/KeoAirDropFreeNe/257/60831)
+</details>
 
 ---
 
-## 📌 Bot Configuration
+## 📦 Installation Methods
 
-### 1. `configs.json` - 📜 Main Configuration
+<details>
+<summary>🔹 Method 1: Git Installation (Recommended)</summary>
+
+```bash
+# Clone repository
+git clone https://github.com/MeoMunDep/mavryk-wallet.git
+cd mavryk-wallet/mavryk-wallet
+
+# Install dependencies
+npm install
+```
+</details>
+
+<details>
+<summary>🔹 Method 2: Manual Installation</summary>
+
+1. Download bot files manually from GitHub
+2. Extract to desired folder
+3. Open terminal in bot directory
+4. Run: `npm install`
+</details>
+
+<details>
+<summary>🔹 Method 3: Docker Installation</summary>
+
+```bash
+# Build image
+docker build -t mavryk-wallet-image .
+
+# Run container
+docker run -d --name mavryk-wallet-container mavryk-wallet-image
+```
+</details>
+
+---
+
+## ⚙️ Configuration Setup
+
+<details>
+<summary>📜 <strong>configs.json</strong> - Main Configuration</summary>
 
 ```json
 {
@@ -74,13 +102,10 @@ Before running the bot, make sure you have installed:
     "maxCaptchaAttempts": 20,
     "2captchaApiKey": ""
   },
-
   "walletDelays": [1, 1],
   "restartInterval": 300,
   "maxConcurrentWallets": 10,
-
   "staking": true,
-
   "buyToken": {
     "OCEAN": false,
     "MARS1": false,
@@ -88,7 +113,6 @@ Before running the bot, make sure you have installed:
     "QUEEN": false,
     "amount": [0.1, 0.2]
   },
-
   "sellToken": {
     "OCEAN": false,
     "MARS1": false,
@@ -96,16 +120,13 @@ Before running the bot, make sure you have installed:
     "QUEEN": false,
     "amount": [0.1, 0.2]
   },
-
   "createVault": {
     "MVRK": true,
     "USDT": true,
     "amount": [1, 2]
   },
-
   "depositToken": true,
   "borrowToken": true,
-
   "sendToken": {
     "MVRK": true,
     "USDT": true,
@@ -117,61 +138,54 @@ Before running the bot, make sure you have installed:
     "NTBM": false,
     "amount": [0.1, 0.2]
   },
-
   "sendToInternalAddresses": true,
   "receiverAddresses": [
-      "add_your_wallet_here",
-      "add_your_wallet_here",
-      "add_your_wallet_here",
-      "add_your_wallet_here",
-      "add_your_wallet_here"
-   ]
-
+    "add_your_wallet_here",
+    "add_your_wallet_here",
+    "add_your_wallet_here",
+    "add_your_wallet_here",
+    "add_your_wallet_here"
+  ]
 }
-
 ```
----
 
-### 🔧 **(Configuration Parameters)**
+### 🔧 Configuration Parameters
 
-| **Parameter Name**            | **Data Type**      | **Default Value** | **Description**                                                                   |
-|------------------------------|--------------------|-------------------|-----------------------------------------------------------------------------------|
-| `2captchaSolver`             | `object`           | `{}`              | Settings related to solving CAPTCHA using 2Captcha.                               |
-| `2captchaSolver.maxCaptchaAttempts` | `number`     | `20`              | Maximum number of attempts to solve a CAPTCHA before skipping.                    |
-| `2captchaSolver.2captchaApiKey`     | `string`     | `""`              | Your 2Captcha API key used for solving CAPTCHA challenges.                        |
-| `walletDelays`               | `[number, number]` | `[5, 8]`           | Random delay (in seconds) between wallets when performing tasks.                 |
-| `restartInterval`            | `number`           | `300`             | Time (in seconds) before the bot restarts all wallets.                           |
-| `maxConcurrentWallets`       | `number`           | `100`             | Number of wallets running simultaneously.                                        |
-| `staking`                    | `boolean`          | `false`           | Determines whether staking is enabled.                                           |
-| `createVault`                | `object`           | `false`           | Determines whether creating new vaults is enabled.                               |
-| `createVault.MVRK`           | `boolean`          | `false`           | Whether to create MVRK vault.                                                    |
-| `createVault.USDT`           | `boolean`          | `false`           | Whether to create USDT vault.                                                    |
-| `createVault.amount`         | `[number, number]` | `[1, 2]`           | Range of token amount to create vault with.                                      |
-| `depositToken`               | `boolean`          | `false`           | Whether to deposit tokens into the vault after creation.                         |
-| `borrowToken`                | `boolean`          | `false`           | Whether to borrow tokens against the vault.                                      |
-| `sendToken`                  | `object`           | `{}`             | Contains settings for which tokens should be sent.                               |
-| `sendToken.xxx`             | `boolean`          | `true`            | Whether to send token x.                                                            |
-| `sendToken.amount`           | `[number, number]` | `[1, 2]`           | Range of the amount of tokens to send (in specified tokens).                     |
-| `sendToInternalAddresses`    | `boolean`          | `true`            | Whether to send tokens to internal addresses (addresses managed by this bot).    |
-| `receiverAddresses`          | `array of string`  | `[]`              | List of destination addresses for token transfers.                               |
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `2captchaSolver.maxCaptchaAttempts` | number | 20 | Max CAPTCHA solve attempts |
+| `2captchaSolver.2captchaApiKey` | string | "" | Your 2Captcha API key |
+| `walletDelays` | [number, number] | [5, 8] | Random delay between wallets (seconds) |
+| `restartInterval` | number | 300 | Bot restart interval (seconds) |
+| `maxConcurrentWallets` | number | 100 | Simultaneous wallet limit |
+| `staking` | boolean | false | Enable/disable staking |
+| `createVault.MVRK/USDT` | boolean | false | Create specific token vaults |
+| `createVault.amount` | [number, number] | [1, 2] | Vault creation amount range |
+| `depositToken` | boolean | false | Auto-deposit after vault creation |
+| `borrowToken` | boolean | false | Auto-borrow against vault |
+| `sendToken.*` | boolean | varies | Enable token sending |
+| `sendToken.amount` | [number, number] | [1, 2] | Token send amount range |
+| `sendToInternalAddresses` | boolean | true | Send to bot-managed addresses |
+| `receiverAddresses` | array | [] | Destination wallet addresses |
+</details>
 
----
+<details>
+<summary>🗂️ <strong>privateKeys.txt</strong> - Wallet Private Keys</summary>
 
-### 2. `privateKeys.txt` - 🗂️ Wallet Privatekey
-
-- [Get it from here](https://github.com/MeoMunDep/Automatic-Ultimate-Create-Wallets-for-Airdrop)
-- Mavryk privatekey.
-
+Add your Mavryk private keys (one per line):
 ```txt
 edsk...
 edsk...
 edsk...
 ```
 
-### 3. `proxies.txt` - 🌐 Proxy (Optional)
+📝 [Generate wallets automatically](https://github.com/MeoMunDep/Automatic-Ultimate-Create-Wallets-for-Airdrop)
+</details>
 
-- [Get it from here](https://www.webshare.io/?referral_code=4l5kb3glsce7)
+<details>
+<summary>🌐 <strong>proxies.txt</strong> - Proxy Configuration (Optional)</summary>
 
+Supported formats:
 ```txt
 http://host:port
 https://host:port
@@ -183,78 +197,113 @@ socks4://user:pass@host:port
 socks5://user:pass@host:port
 ```
 
+🔗 [Get reliable proxies](https://www.webshare.io/?referral_code=4l5kb3glsce7)
+</details>
+
 ---
 
-## 📌 Running the Bot
+## 🚀 Running the Bot
 
-### **Run on PC:**
+<details>
+<summary>💻 <strong>Standard Execution</strong></summary>
 
+### Command Line
 ```bash
 node tx_meomundep.js
 ```
 
-### **Run with batch script on Windows:**
+### Windows Batch Script
+```cmd
+cd "path\to\mavryk-wallet"
+run.bat
+```
+*Run as Administrator if permission issues occur*
 
-1. Open **Command Prompt (CMD)**.
-2. Navigate to the bot folder:
-   ```cmd
-   cd "path\to\mavryk-wallet"
-   ```
-3. Run the batch script:
-   ```cmd
-   run.bat
-   ```
-   _(\*If you encounter permission issues, right-click `run.bat` and select "Run as Administrator".)_
-
-### **Run with shell script on Linux/macOS:**
-
+### Linux/macOS Shell Script
 ```bash
 ./run.sh
 ```
+</details>
 
-### **Run using Docker:**
+<details>
+<summary>🐳 <strong>Docker Execution</strong></summary>
 
 ```bash
+# Start container
 docker start mavryk-wallet-container
+
+# View logs
+docker logs mavryk-wallet-container
+
+# Stop container
+docker stop mavryk-wallet-container
 ```
+</details>
 
 ---
 
-## 📌 Updating the Bot
+## 🔄 Maintenance
 
-### 🔹 If installed via Git
+<details>
+<summary>📥 <strong>Updating the Bot</strong></summary>
 
+### Git Method
 ```bash
 cd mavryk-wallet
 git pull origin main
 npm install
 ```
 
-### 🔹 If running via Docker
-
+### Docker Method
 ```bash
 docker stop mavryk-wallet-container
 docker rm mavryk-wallet-container
 docker build -t mavryk-wallet-image .
 docker run -d --name mavryk-wallet-container mavryk-wallet-image
 ```
+</details>
 
-_For Windows CMD:_
+<details>
+<summary>🛠️ <strong>Troubleshooting</strong></summary>
 
-```cmd
-docker run -d --name mavryk-wallet-container mavryk-wallet-image
-```
+### Common Issues
+- **Permission Errors**: Run as Administrator (Windows) or use `sudo` (Linux/macOS)
+- **Port Conflicts**: Check if ports are already in use
+- **Network Issues**: Verify proxy settings and internet connection
+- **CAPTCHA Failures**: Check 2Captcha API key and balance
+
+### Performance Optimization
+- Adjust `maxConcurrentWallets` based on system resources
+- Increase `walletDelays` if rate-limited
+- Use quality proxies for better success rates
+</details>
 
 ---
 
-## 📌 Contact & Support
+## 📞 Support
 
-- **Mavryk Website** [Wallet Extension Link](https://chromewebstore.google.com/detail/mavryk-wallet/cgddkajmbckbjbnondgfcbcojjjdnmji) | [Galxe quests](https://app.galxe.com/quest/YxQGYqYQcCGDcfX7KZMU8j/GCsVgt1rUx?referral_code=GRFr2JwrrimuEzutJsPOIO4qJbReP6jzWa-sC-le8jxo2H8) | [Faucet Trick](https://t.me/KeoAirDropFreeNee/1651)
-- **Buy a Telegram account** [Here](https://t.me/KeoAirDropFreeNe/312/27801)
-- **Contact for work:** [Telegram](https://t.me/MeoMunDep)
-- **Join the support group:** [Join here](https://t.me/KeoAirDropFreeNe)
-- **Updates Channel:** [View channel](https://t.me/KeoAirDropFreeNee)
+<details>
+<summary>🔗 <strong>Resources & Contact</strong></summary>
 
-⚠️ **Disclaimer**: This code is provided "as is" without any warranties. Use it at your own risk. You are solely responsible for any consequences arising from its use. Redistribution or sale of this code in any form is strictly prohibited.
+### Official Links
+- 🌐 [Mavryk Wallet Extension](https://chromewebstore.google.com/detail/mavryk-wallet/cgddkajmbckbjbnondgfcbcojjjdnmji)
+- 🎯 [Galxe Quests](https://app.galxe.com/quest/YxQGYqYQcCGDcfX7KZMU8j/GCsVgt1rUx?referral_code=GRFr2JwrrimuEzutJsPOIO4qJbReP6jzWa-sC-le8jxo2H8)
+- 💧 [Faucet Trick](https://t.me/KeoAirDropFreeNee/1651)
 
-✨ Thank you for using the bot! Good luck! 🚀
+### Community & Support
+- 💬 [Developer Contact](https://t.me/MeoMunDep)
+- 👥 [Support Group](https://t.me/KeoAirDropFreeNe)
+- 📢 [Updates Channel](https://t.me/KeoAirDropFreeNee)
+- 🛒 [Telegram Accounts](https://t.me/KeoAirDropFreeNe/312/27801)
+</details>
+
+---
+
+## ⚠️ Disclaimer
+
+<details>
+<summary>Legal Notice</summary>
+
+This code is provided "as is" without warranties. Users assume full responsibility for consequences. Redistribution or commercial sale is prohibited.
+</details>
+
