@@ -29,7 +29,12 @@
     "mavryknetwork",
     "layer1",
     "evm",
-    "meomundep"
+    "meomundep",
+    "blackcatsyndicate",
+    "mavrykwallet",
+    "wallet",
+    "evm",
+    "tezos"
   ],
   "author": "Meomundep",
 }
