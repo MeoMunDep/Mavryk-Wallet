@@ -1,1 +1,1 @@
-console.log(`Some guys try to sabotage the repo so i stop updating it, pay some respect!`)
+console.log(`The airdrop is kinda..., so please choose another scripts!`)
